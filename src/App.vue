@@ -38,6 +38,9 @@ export default {
 </script>
 
 <style lang="scss">
+.v-btn.v-size--default {
+  font-size: 14px !important;
+}
 .v-dialog {
   box-shadow: none !important;
   overflow: visible !important;
