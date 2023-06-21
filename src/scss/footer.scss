@@ -1,0 +1,164 @@
+.footer {
+  height: 178px;
+  margin-top: 80px;
+  background-color: #e7ccff !important;
+  &--noimg {
+    &::after {
+      display: none;
+    }
+    @media screen and (max-width: 600px) {
+      margin-top: 0px !important;
+      .footer__contacts {
+        margin-top: 20px !important;
+      }
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    text-align: center;
+    height: 100%;
+  }
+  @media screen and (max-width: 672px) {
+    margin-top: 120px;
+  }
+  &__logo {
+    margin-top: 10px;
+    justify-content: end;
+
+    @media screen and (max-width: 960px) {
+      justify-content: center;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 23px;
+
+    a img {
+      width: 28px;
+      height: 28px;
+      filter: invert(87%) sepia(33%) saturate(7480%) hue-rotate(209deg)
+        brightness(106%) contrast(106%);
+    }
+    @media screen and (max-width: 960px) {
+      margin-left: 0;
+      padding-left: 0 !important;
+    }
+  }
+
+  &__contacts {
+    @media screen and (max-width: 960px) {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin-top: 95px;
+    }
+  }
+
+  &__developers {
+    @media screen and (max-width: 960px) {
+      margin-top: 34px;
+    }
+  }
+
+  &::after {
+    content: "";
+    top: -1100px;
+    left: -20px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background: url("../assets/главная5.png") no-repeat;
+    z-index: 5;
+    background-size: 100%;
+    background-position: right center;
+    @media screen and (max-width: 1750px) {
+      background-size: auto;
+      top: -1200px;
+    }
+    @media screen and (max-width: 1120px) {
+      background-size: contain;
+      top: -775px;
+      left: -100px;
+    }
+    @media screen and (max-width: 672px) {
+      background-image: url("../assets/главнаям.png");
+      background-size: 50%;
+      left: -700px;
+      top: -1200px;
+    }
+    @media screen and (max-width: 550px) {
+      top: -1100px;
+    }
+
+    @media screen and (max-width: 440px) {
+      left: -500px;
+      top: -1000px;
+    }
+
+    @media screen and (max-width: 370px) {
+      left: -400px;
+      top: -900px;
+    }
+  }
+
+  &--dictionary,
+  &--lectures {
+    @media screen and (max-width: 960px) {
+      margin-top: 0px;
+    }
+    @media screen and (max-width: 959px) {
+      margin-top: 0px;
+    }
+    .footer__contacts {
+      @media screen and (max-width: 960px) {
+        margin-top: 80px;
+      }
+    }
+    &::after {
+      background-image: url("../assets/профиль.png");
+      top: -610px;
+      @media screen and (max-width: 1750px) {
+        background-size: 100%;
+      }
+      @media screen and (max-width: 1570px) {
+        top: -550px;
+      }
+      @media screen and (max-width: 1339px) {
+        top: -500px;
+      }
+      @media screen and (max-width: 1225px) {
+        top: -450px;
+      }
+      @media screen and (max-width: 1120px) {
+        background-size: 100%;
+        top: -450px;
+      }
+      @media screen and (max-width: 960px) {
+        top: -575px;
+      }
+      @media screen and (max-width: 853px) {
+        top: -540px;
+      }
+      @media screen and (max-width: 672px) {
+        background-image: url("../assets/главнаям.png");
+        background-size: 50%;
+        left: -700px;
+        top: -1200px;
+      }
+      @media screen and (max-width: 550px) {
+        top: -1100px;
+      }
+
+      @media screen and (max-width: 440px) {
+        left: -500px;
+        top: -1000px;
+      }
+
+      @media screen and (max-width: 370px) {
+        left: -400px;
+        top: -900px;
+      }
+    }
+  }
+}

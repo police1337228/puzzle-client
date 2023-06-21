@@ -1,0 +1,50 @@
+.alphabet-header {
+  position: relative;
+  z-index: 6;
+  text-align: center;
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+.alphabet {
+  position: relative;
+  z-index: 6;
+  &__list {
+    margin-top: 70px;
+  }
+
+  button {
+    span {
+      border-bottom: 1px solid black;
+    }
+  }
+}
+
+.alphabet-item {
+  cursor: pointer;
+  margin-bottom: 80px;
+  &__body {
+    height: 144px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 29px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 29px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 29px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 28.8px;
+    img {
+      border-radius: 28.8px;
+      height: 144px;
+      width: 100%;
+      @media screen and (max-width: 600px) {
+        object-fit: cover;
+      }
+    }
+  }
+  &__title {
+    margin-top: 11px;
+    p {
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.profile-header {
+  text-align: center;
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+.profile-title {
+  position: relative;
+  z-index: 6;
+  i {
+    font-size: 30px;
+    background: #ca88f3;
+    padding: 14px 15.5px;
+    border-radius: 100%;
+  }
+  p {
+    font-family: "FuturaMediumC", sans-serif;
+    font-size: 27px;
+    margin-bottom: 0;
+    margin-left: 12px;
+  }
+}
+
+.profile-info {
+  position: relative;
+  z-index: 6;
+  margin-top: 60px;
+  p {
+    font-family: "FuturaMediumC", sans-serif;
+    font-size: 27px;
+    margin-bottom: 14.5px;
+  }
+  &__account {
+    form p {
+      font-size: 18px;
+      color: #996bb4;
+      margin-bottom: 0;
+    }
+  }
+  &__form {
+    .textfield {
+      border-width: 4px !important;
+      border-radius: 26.25px;
+    }
+    fieldset {
+      border: 4.5px solid !important;
+      color: #e0c4fa !important;
+    }
+    label {
+      font-family: "FuturaMediumC";
+      font-size: 15px;
+      padding-left: 15px;
+      color: #91008d !important;
+    }
+    input {
+      padding-left: 15px !important;
+      color: black !important;
+    }
+  }
+
+  &__avatar {
+    position: relative;
+    z-index: 6;
+    &-list {
+      align-items: center;
+      text-align: center;
+      padding-left: 70px;
+      padding-right: 70px;
+      margin-top: 45px;
+      border-radius: 54px;
+      padding-top: 30px;
+      background: #c7c5ff; /* Old browsers */
+      background: -moz-linear-gradient(
+        top,
+        #c7c5ff 0%,
+        #e3c6ff 72%,
+        #fec7ff 100%
+      ); /* FF3.6-15 */
+      background: -webkit-linear-gradient(
+        top,
+        #c7c5ff 0%,
+        #e3c6ff 72%,
+        #fec7ff 100%
+      ); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(
+        to bottom,
+        #c7c5ff 0%,
+        #e3c6ff 72%,
+        #fec7ff 100%
+      ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+      @media screen and (max-width: 600px) {
+        // margin: 40px !important;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      img {
+        display: inline-block;
+        transition: scale 0.2s ease;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        -webkit-font-smoothing: subpixel-antialiased;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        &.active {
+          outline: 5px dashed #ca88f3;
+          padding: 0px;
+          border-radius: 100%;
+        }
+      }
+
+      button {
+        margin-top: 30px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

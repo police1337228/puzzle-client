@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.08" height="19.08" viewBox="0 0 19.08 19.08">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fdaaff" stop-opacity="0.996"/>
+      <stop offset="0.26" stop-color="#dcb1ff" stop-opacity="0.996"/>
+      <stop offset="1" stop-color="#bbb8ff"/>
+    </linearGradient>
+  </defs>
+  <circle id="Эллипс_4_копия_5" data-name="Эллипс 4 копия 5" cx="9.54" cy="9.54" r="9.54" fill="url(#linear-gradient)"/>
+</svg>

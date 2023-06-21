@@ -1,0 +1,46 @@
+html,
+body {
+  font-family: "Circe", sans-serif;
+  font-size: 24px;
+  line-height: 1.458;
+  color: #fff;
+  overflow: hidden;
+}
+
+body {
+  background: #fff9d9 no-repeat; /* Old browsers */
+  background: -moz-linear-gradient(top, #fff9d9 0%, #f4ddff 52%, #ddbfff 100%)
+    no-repeat; /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+      top,
+      #fff9d9 0%,
+      #f4ddff 52%,
+      #ddbfff 100%
+    )
+    no-repeat; /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fff9d9 0%, #f4ddff 52%, #ddbfff 100%)
+    no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.container {
+  max-width: 1280px !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.visually-hidden {
+  opacity: 0;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  display: block;
+  margin-left: -100000px;
+  background: transparent;
+  font-size: 0;
+}
+
+.none {
+  display: none;
+}
