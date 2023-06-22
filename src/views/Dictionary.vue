@@ -5,8 +5,8 @@
         <v-col>
           <h2>Словарь</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-            accusantium.
+            В данном разделе ты найдешь тематические подборки слов, оформленные
+            в словари
           </p>
         </v-col>
       </v-row>
@@ -26,6 +26,7 @@
               >
                 <v-btn
                   text
+                  @click.prevent="null"
                   :to="'dictionary/' + item.id"
                   class="dictionary__button"
                   >Словарь {{ item.id + 1 }} «{{ item.title }}»</v-btn
@@ -34,8 +35,7 @@
               <v-expansion-panel-content
                 class="dictionary__content elevation-0"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-                explicabo.
+                {{ item.description }}
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -56,22 +56,32 @@ export default {
         {
           id: 0,
           title: "Знакомство",
+          description:
+            "Познакомься с основной лексикой раздела «Знакомства», слова представлены в отдельных видеороликах.",
         },
         {
           id: 1,
           title: "Дом",
+          description:
+            "Познакомься с основной лексикой раздела «Дом», слова представлены в отдельных видеороликах.",
         },
         {
           id: 2,
           title: "Природа, растения",
+          description:
+            "Познакомься с основной лексикой раздела «Природа, растения», слова представлены в отдельных видеороликах.",
         },
         {
           id: 3,
           title: "Семья",
+          description:
+            "Познакомься с основной лексикой раздела «Семья», слова представлены в отдельных видеороликах.",
         },
         {
           id: 4,
           title: "Глаголы",
+          description:
+            "Познакомься с наиболее часто используемыми глаголами, слова представлены в отдельных видеороликах. ",
         },
       ],
     };

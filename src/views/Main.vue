@@ -60,7 +60,7 @@
                   <p>Выбирайте и изучайте только нужные слова</p>
                 </div>
                 <div class="pluses__link">
-                  <a href="#">Перейти к словарю</a>
+                  <router-link to="/dictionary">Перейти к словарю</router-link>
                 </div>
               </div>
             </div>
@@ -76,8 +76,9 @@
                   <p>В одном месте, в одно касание</p>
                 </div>
                 <div class="pluses__link text-center">
-                  <a href="#">Перейти к алфавиту</a><br />
-                  <a href="#">Перейти к цифрам</a>
+                  <router-link to="/alphabet">Перейти к алфавиту</router-link
+                  ><br />
+                  <router-link to="/numbers">Перейти к цифрам</router-link>
                 </div>
               </div>
             </div>
@@ -96,7 +97,7 @@
                   </p>
                 </div>
                 <div class="pluses__link">
-                  <a href="#">Перейти к лекциям</a>
+                  <router-link to="/lectures">Перейти к лекциям</router-link>
                 </div>
               </div>
             </div>
@@ -112,7 +113,7 @@
                   <p>Закрепите материал и проверьте свои знания</p>
                 </div>
                 <div class="pluses__link">
-                  <a href="#">Перейти к игре</a>
+                  <router-link to="/game">Перейти к игре</router-link>
                 </div>
               </div>
             </div>
@@ -130,7 +131,7 @@
                   <p>Можете выбрать и учить, лишь то, что нужно сейчас</p>
                 </div>
                 <div class="pluses__link">
-                  <a href="#">Перейти к темам</a>
+                  <router-link to="/dictionary">Перейти к темам</router-link>
                 </div>
               </div>
             </div>

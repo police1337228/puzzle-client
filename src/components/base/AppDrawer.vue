@@ -37,13 +37,19 @@
         <p>Контакты</p>
         <ul class="nav__links">
           <li>
-            <a href="#!"><img src="../../assets/35.svg" /></a>
+            <a href="mailto:socialproject2022@mail.ru" target="_blank"
+              ><img src="../../assets/35.svg"
+            /></a>
           </li>
           <li>
-            <a href="#!"><img src="../../assets/37.svg" /></a>
+            <a href="https://t.me/+qtJ6uVyUlqAxNzky" target="_blank"
+              ><img src="../../assets/37.svg"
+            /></a>
           </li>
           <li>
-            <a href="#!"><img src="../../assets/36.svg" /></a>
+            <a href="https://vk.com/public220092563" target="_blank"
+              ><img src="../../assets/36.svg"
+            /></a>
           </li>
         </ul>
       </div>

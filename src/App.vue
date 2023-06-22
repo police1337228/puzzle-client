@@ -72,15 +72,6 @@ export default {
     padding-right: 0 !important;
   }
 
-  // &__video {
-  //   @media screen and (max-width: 600px) {
-  //     width: 400px !important;
-  //   }
-  //   @media screen and (max-width: 485px) {
-  //     width: 300px !important;
-  //   }
-  // }
-
   &__title {
     span {
       font-size: 24px;
@@ -105,6 +96,10 @@ export default {
     font-family: "FuturaMediumC";
     font-size: 18px;
     padding: 13px 37px !important;
+    @media screen and (max-width: 400px) {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
   }
   &__new {
     font-size: 18px !important;
@@ -220,6 +215,17 @@ export default {
     }
     .v-label {
       line-height: auto !important;
+    }
+
+    @media screen and (max-width: 400px) {
+      .modal__login {
+        font-size: 12px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      padding-left: 10px !important;
+      padding-right: 10px !important;
     }
   }
 

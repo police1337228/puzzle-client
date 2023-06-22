@@ -4,14 +4,6 @@
       class="d-flex container elevation-0 align-center"
       color="transparent"
     >
-      <!-- <v-toolbar-title
-        class="logo"
-        tag="v-btn"
-        plain
-        to="/"
-        :class="{ 'v-btn--active': true }"
-        ></v-toolbar-title
-      > -->
       <v-toolbar-title class="logo">
         <img
           src="@/assets/logo/ПАЗЛ_НАЗВАНИЕ.svg"

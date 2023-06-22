@@ -110,7 +110,8 @@
         &.active {
           outline: 5px dashed #ca88f3;
           padding: 0px;
-          border-radius: 100%;
+          border-radius: 100% !important;
+          -webkit-border-radius: 100%;
         }
       }
 
