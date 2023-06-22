@@ -113,7 +113,7 @@ export default {
         {
           id: 0,
           title: "Дактилирование",
-          videoSrc: "./videos/lectures/Лекция 1. Дактилирование.mp4",
+          videoSrc: `${process.env.BASE_URL}videos/lectures/Лекция 1. Дактилирование.mp4`,
         },
         {
           id: 1,

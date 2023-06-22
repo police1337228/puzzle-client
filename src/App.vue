@@ -43,7 +43,6 @@ export default {
 }
 .v-dialog {
   box-shadow: none !important;
-  overflow: visible !important;
   @media screen and (max-width: 600px) {
     margin: 40px !important;
   }

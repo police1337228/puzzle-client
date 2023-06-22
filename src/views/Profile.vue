@@ -21,8 +21,10 @@
             :src="
               require('../assets/avatars/logo' +
                 Number(Number(avatarType) + 1) +
-                '.png')
+                '.svg')
             "
+            width="65px"
+            height="65px"
             v-else
           />
           <p>{{ name }}</p>
@@ -156,6 +158,8 @@
                   alt=""
                   :class="{ active: activeAvatar == avatar.id }"
                   @click="selectAvatar(avatar.id)"
+                  width="65px"
+                  height="65px"
                 />
               </v-col>
 
@@ -207,47 +211,47 @@ export default {
       avatars: [
         {
           id: 0,
-          src: require("../assets/avatars/logo1.png"),
+          src: require("../assets/avatars/logo1.svg"),
           active: false,
         },
         {
           id: 1,
-          src: require("../assets/avatars/logo2.png"),
+          src: require("../assets/avatars/logo2.svg"),
           active: false,
         },
         {
           id: 2,
-          src: require("../assets/avatars/logo3.png"),
+          src: require("../assets/avatars/logo3.svg"),
           active: false,
         },
         {
           id: 3,
-          src: require("../assets/avatars/logo4.png"),
+          src: require("../assets/avatars/logo4.svg"),
           active: false,
         },
         {
           id: 4,
-          src: require("../assets/avatars/logo5.png"),
+          src: require("../assets/avatars/logo5.svg"),
           active: false,
         },
         {
           id: 5,
-          src: require("../assets/avatars/logo6.png"),
+          src: require("../assets/avatars/logo6.svg"),
           active: false,
         },
         {
           id: 6,
-          src: require("../assets/avatars/logo7.png"),
+          src: require("../assets/avatars/logo7.svg"),
           active: false,
         },
         {
           id: 7,
-          src: require("../assets/avatars/logo8.png"),
+          src: require("../assets/avatars/logo8.svg"),
           active: false,
         },
         {
           id: 8,
-          src: require("../assets/avatars/logo9.png"),
+          src: require("../assets/avatars/logo9.svg"),
           active: false,
         },
       ],
@@ -269,6 +273,7 @@ export default {
         this.$store.dispatch("auth/setToken", response.data.token);
         this.$store.dispatch("auth/setUser", response.data.user);
         this.$router.go();
+        window.scrollTo(0, 0);
       } catch (error) {
         this.error = error.response.data.error;
       }
