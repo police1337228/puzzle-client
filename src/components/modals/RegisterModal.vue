@@ -3,6 +3,7 @@
     <v-dialog
       v-model="registerDialog"
       max-width="500px"
+      scrollable
       class="elevation-0 dialog-modal"
     >
       <v-card class="elevation-0 modal modal__login modal__reg">

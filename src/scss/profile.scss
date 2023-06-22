@@ -111,7 +111,11 @@
           outline: 5px dashed #ca88f3;
           padding: 0px;
           border-radius: 100% !important;
-          -webkit-border-radius: 100%;
+          -webkit-border-radius: 100% !important;
+          -moz-border-radius: 100% !important;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
         }
       }
 

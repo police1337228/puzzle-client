@@ -26,7 +26,7 @@
               >
                 <v-btn
                   text
-                  @click.prevent="null"
+                  @click.stop
                   :to="'dictionary/' + item.id"
                   class="dictionary__button"
                   >Словарь {{ item.id + 1 }} «{{ item.title }}»</v-btn

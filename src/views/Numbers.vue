@@ -160,12 +160,6 @@ export default {
       this.dialog = true;
     },
   },
-
-  watch: {
-    loading(newv, oldv) {
-      console.log(newv, oldv);
-    },
-  },
 };
 </script>
 

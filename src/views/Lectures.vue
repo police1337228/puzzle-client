@@ -26,7 +26,7 @@
               >
                 <v-btn
                   text
-                  @click.prevent="null"
+                  @click.stop
                   :to="'/lectures/' + item.id"
                   class="dictionary__button"
                   >Лекция {{ item.id + 1 }} «{{ item.title }}»</v-btn
