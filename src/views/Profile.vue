@@ -199,7 +199,7 @@ export default {
       bdate: this.$store.state.auth.user.birthDate,
       avatarType: this.$store.state.auth.user.avatarType || null,
       id: this.$store.state.auth.user.id,
-      activeAvatar: this.$store.state.auth.user.avatarType || null,
+      activeAvatar: null,
       avatar: null,
       isTouched: true,
       error: null,

@@ -335,15 +335,16 @@
         <v-row class="justify-space-between">
           <v-col class="col-xl-5 col-md-5 col-12 form-col">
             <div class="suggest__form">
-              <v-form v-model="valid" @submit.prevent="handleForm">
+              <v-form v-model="valid" @submit.prevent="handleForm" ref="form">
                 <v-row>
+                  <div v-html="error" class="text-center red--text" />
                   <v-col cols="12">
                     <v-text-field
                       class="textfield"
-                      v-model="firstname"
-                      :rules="nameRules"
+                      v-model="name"
+                      name="name"
+                      :rules="rules.name"
                       label="ФИО"
-                      required
                       outlined
                       shaped
                       color="#E0C4FA"
@@ -353,10 +354,10 @@
                   <v-col cols="12">
                     <v-text-field
                       class="textfield"
-                      v-model="lastname"
-                      :rules="nameRules"
+                      v-model="email"
+                      name="email"
+                      :rules="rules.email"
                       label="Почта"
-                      required
                       type="email"
                       outlined
                       color="#E0C4FA"
@@ -366,10 +367,10 @@
                   <v-col cols="12">
                     <v-textarea
                       class="textfield"
-                      v-model="email"
-                      :rules="emailRules"
+                      v-model="text"
+                      name="text"
+                      :rules="rules.text"
                       label="Вопрос/предложение"
-                      required
                       outlined
                       color="#E0C4FA"
                     ></v-textarea>
@@ -410,6 +411,7 @@
 </template>
 
 <script>
+import MailService from "@/services/MailService";
 export default {
   name: "MainPage",
 
@@ -427,6 +429,15 @@ export default {
         { id: 3, title: "Мобильность", img: require("../assets/20.png") },
         { id: 4, title: "Универсальность", img: require("../assets/19.png") },
       ],
+      email: "",
+      name: "",
+      text: "",
+      error: null,
+      rules: {
+        name: [(v) => !!v || "Введите ФИО"],
+        email: [(v) => !!v || "Введите Email"],
+        text: [(v) => !!v || "Введите вопрос/предложение"],
+      },
     };
   },
   mounted() {
@@ -437,15 +448,29 @@ export default {
       get() {
         return this.$store.state.formDialog;
       },
+      set(val) {
+        this.$store.commit("toggleFormDialog", val);
+      },
     },
   },
   methods: {
-    handleForm() {
-      this.$store.commit("toggleFormDialog", true);
+    async handleForm() {
+      if (!this.$refs.form.validate()) return;
 
-      setTimeout(() => {
+      try {
+        await MailService.mail({
+          email: this.email,
+          name: this.name,
+          text: this.text,
+        });
+        this.$store.commit("toggleFormDialog", true);
+        setTimeout(() => {
+          this.$store.commit("toggleFormDialog", false);
+        }, 1500);
+      } catch (error) {
+        this.error = error.response.data.error;
         this.$store.commit("toggleFormDialog", false);
-      }, 1500);
+      }
     },
   },
   watch: {
