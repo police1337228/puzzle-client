@@ -303,6 +303,7 @@ export default {
       }
       span {
         display: block;
+        text-align: center;
       }
       margin-bottom: 90px;
 

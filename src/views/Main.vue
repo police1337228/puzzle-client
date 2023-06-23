@@ -366,6 +366,8 @@
                   <v-col cols="12">
                     <v-textarea
                       class="textfield"
+                      no-resize
+                      rows="5"
                       v-model="text"
                       name="text"
                       :rules="rules.text"

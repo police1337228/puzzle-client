@@ -5,7 +5,6 @@
         <v-row>
           <v-col>
             <h2>Игра «1»</h2>
-            <!-- <v-btn @click="restartGame">Рестарт</v-btn> -->
           </v-col>
         </v-row>
       </div>
@@ -224,7 +223,7 @@
                       {{ answersArray.length }} баллов!
                     </p>
                     <span
-                      >Неправильные ответы: {{ wrongAnswers.join(",") }}</span
+                      >Неправильные ответы: {{ wrongAnswers.join(", ") }}</span
                     ><br />
                     <v-btn @click="restartGame" text>Вернуться к темам </v-btn>
                   </v-card-text>
