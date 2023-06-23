@@ -161,7 +161,6 @@
       <div class="img-container">
         <h2>ПЛАТФОРМА ПРЕДОСТАВЛЯЕТ</h2>
         <v-carousel
-          v-model="model"
           class="d-block d-sm-none abilities__carousel"
           height="350"
           hide-delimiters
@@ -189,7 +188,7 @@
             /></a>
           </template>
           <v-carousel-item v-for="item in carouselItems" :key="item.id">
-            <v-sheet :color="color" height="100%" tile>
+            <v-sheet height="100%" tile>
               <v-row class="fill-height" align="center" justify="center">
                 <v-col class="col-xl-2 col-md-2 col-sm-6 col-12"
                   ><div class="abilities__item">
@@ -335,7 +334,7 @@
         <v-row class="justify-space-between">
           <v-col class="col-xl-5 col-md-5 col-12 form-col">
             <div class="suggest__form">
-              <v-form v-model="valid" @submit.prevent="handleForm" ref="form">
+              <v-form @submit.prevent="handleForm" ref="form">
                 <v-row>
                   <div v-html="error" class="text-center red--text" />
                   <v-col cols="12">

@@ -270,7 +270,7 @@ export default {
       }
     }
 
-    ::after {
+    &::after {
       content: "";
       top: 0px;
       left: 0;
@@ -281,6 +281,36 @@ export default {
       z-index: 5;
       background-size: 100%;
       background-position: bottom;
+    }
+  }
+
+  &__game {
+    .modal__title {
+      position: relative;
+      z-index: 7;
+      span {
+        color: black;
+        margin-bottom: 20px;
+      }
+    }
+    .modal__text {
+      position: relative;
+      z-index: 7;
+      p {
+        font-family: "FuturaMediumC", sans-serif;
+        font-size: 24px;
+        text-align: center;
+      }
+      span {
+        display: block;
+      }
+      margin-bottom: 90px;
+
+      button {
+        span {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }

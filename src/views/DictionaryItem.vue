@@ -166,9 +166,9 @@ export default {
             },
             {
               id: 10,
-              title: "Знакомится",
-              videoSrc: `${process.env.BASE_URL}videos/dictionary/1/Знакомится.mp4`,
-              videoPreview: `${process.env.BASE_URL}videos/dictionary/1/Знакомится.jpg`,
+              title: "Знакомиться",
+              videoSrc: `${process.env.BASE_URL}videos/dictionary/1/Знакомиться.mp4`,
+              videoPreview: `${process.env.BASE_URL}videos/dictionary/1/Знакомиться.jpg`,
             },
             {
               id: 11,

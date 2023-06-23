@@ -23,10 +23,18 @@ export default {
     modal: {
       type: Boolean,
     },
+    muted: {
+      type: Boolean,
+      default: false,
+    },
     options: {
       type: Object,
       default() {
         return {
+          muted: this.muted,
+          controlBar: {
+            volumePanel: false,
+          },
           autoplay: false,
           sources: [
             {
@@ -81,10 +89,8 @@ export default {
     videoSrc() {
       this.player.src(this.videoSrc);
       this.player.load();
-      console.log("changed");
     },
     modal(newState) {
-      console.log(newState);
       if (newState === false) {
         if (this.player) this.player.pause();
       }
