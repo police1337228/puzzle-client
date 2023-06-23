@@ -32,6 +32,10 @@ export default {
   data() {
     return {
       model: 0,
+      metaInfo: {
+        title: "ПАЗЛ123 - изучение русского жествого языка онлайн",
+        titleTemplate: "%s | ПАЗЛ",
+      },
     };
   },
 };

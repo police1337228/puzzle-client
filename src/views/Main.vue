@@ -367,7 +367,7 @@
                     <v-textarea
                       class="textfield"
                       no-resize
-                      rows="5"
+                      rows="3"
                       v-model="text"
                       name="text"
                       :rules="rules.text"
@@ -438,6 +438,9 @@ export default {
         name: [(v) => !!v || "Введите ФИО"],
         email: [(v) => !!v || "Введите Email"],
         text: [(v) => !!v || "Введите вопрос/предложение"],
+      },
+      metaInfo: {
+        title: "ПАЗЛ - изучение русского жествого языка онлайн",
       },
     };
   },
