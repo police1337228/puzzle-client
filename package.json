@@ -16,12 +16,15 @@
     "vue-meta": "^2.4.0",
     "vue-router": "^3.5.1",
     "vuetify": "^2.6.0",
+    "vuetify-loader": "^1.9.2",
     "vuex": "^3.6.2",
     "vuex-persistedstate": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
+    "@fullhuman/postcss-purgecss": "^4.0.0",
+    "@fullhuman/vue-cli-plugin-purgecss": "~5.0.0",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-plugin-pwa": "~5.0.0",
