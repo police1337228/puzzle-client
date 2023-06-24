@@ -32,11 +32,21 @@ export default {
   data() {
     return {
       model: 0,
-      metaInfo: {
-        title: "ПАЗЛ123 - изучение русского жествого языка онлайн",
-        titleTemplate: "%s | ПАЗЛ",
-      },
     };
+  },
+  metaInfo: {
+    title: "ПАЗЛ - изучение русского жестового языка онлайн",
+    meta: [
+      {
+        description:
+          "ПАЗЛ - платформа по изучению языков жестов. Познавайте новое в удобном для Вас формате и в любое время!",
+      },
+      {
+        keywords:
+          "пазл, жестовый язык, язык жестов, русский жестовый язык, образование, обучение",
+      },
+    ],
+    titleTemplate: "%s | ПАЗЛ",
   },
 };
 </script>
@@ -48,7 +58,6 @@ export default {
 .v-dialog {
   box-shadow: none !important;
   overflow: visible !important;
-  // overflow-y: scroll;
   @media screen and (max-width: 600px) {
     margin: 40px !important;
   }
@@ -281,7 +290,7 @@ export default {
       bottom: -2px;
       right: 0;
       position: absolute;
-      background: url("./assets/Clip.png") no-repeat;
+      background: url("./assets/Clip.webp") no-repeat;
       z-index: 5;
       background-size: 100%;
       background-position: bottom;
@@ -504,7 +513,7 @@ header {
     bottom: 0;
     right: 0;
     position: absolute;
-    background: url("./assets/главная1.png") no-repeat;
+    background: url("./assets/главная1.webp") no-repeat;
     z-index: 5;
     left: -15px;
     right: -15px;
@@ -525,7 +534,7 @@ header {
       top: 120px;
     }
     @media screen and (max-width: 672px) {
-      background: url("./assets/главнаям1.png") no-repeat;
+      background: url("./assets/главнаям1.webp") no-repeat;
       top: -110px;
       right: -101px;
       background-size: contain;
@@ -769,7 +778,7 @@ header {
     bottom: 0;
     right: 0;
     position: absolute;
-    background: url("./assets/главная3.png") no-repeat;
+    background: url("./assets/главная3.webp") no-repeat;
     z-index: 5;
     background-size: auto;
     background-position: right;
@@ -816,7 +825,7 @@ header {
     @media screen and (max-width: 672px) {
       right: -15px;
       top: -2300px;
-      background-image: url("./assets/главнаям2.png");
+      background-image: url("./assets/главнаям2.webp");
       background-size: 100%;
     }
     @media screen and (max-width: 600px) {
@@ -861,7 +870,7 @@ header {
     bottom: 0;
     right: 0;
     position: absolute;
-    background: url("./assets/главная2.png") no-repeat;
+    background: url("./assets/главная2.webp") no-repeat;
     z-index: 5;
     background-size: auto;
     background-position: left;
@@ -1055,7 +1064,7 @@ header {
     bottom: 0;
     right: 0;
     position: absolute;
-    background: url("./assets/главная4.png") no-repeat;
+    background: url("./assets/главная4.webp") no-repeat;
     z-index: 5;
     background-size: auto;
     background-position: right center;
@@ -1113,7 +1122,7 @@ header {
       top: 1700px;
     }
     @media screen and (max-width: 672px) {
-      background-image: url("./assets/главнаям3.png");
+      background-image: url("./assets/главнаям3.webp");
       background-size: 50%;
       top: 2000px;
       right: -5%;

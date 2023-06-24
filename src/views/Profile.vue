@@ -190,6 +190,9 @@ import AuthenticationService from "@/services/AuthenticationService";
 import "../scss/profile.scss";
 
 export default {
+  metaInfo: {
+    title: "Профиль",
+  },
   data() {
     return {
       name: this.$store.state.auth.user.fullName,

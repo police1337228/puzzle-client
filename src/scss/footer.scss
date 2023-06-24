@@ -68,7 +68,7 @@
     bottom: 0;
     right: 0;
     position: absolute;
-    background: url("../assets/главная5.png") no-repeat;
+    background: url("../assets/главная5.webp") no-repeat;
     z-index: 5;
     background-size: 100%;
     background-position: right center;
@@ -82,7 +82,7 @@
       left: -100px;
     }
     @media screen and (max-width: 672px) {
-      background-image: url("../assets/главнаям.png");
+      background-image: url("../assets/главнаям.webp");
       background-size: 50%;
       left: -700px;
       top: -1200px;
@@ -116,7 +116,7 @@
       }
     }
     &::after {
-      background-image: url("../assets/профиль.png");
+      background-image: url("../assets/профиль.webp");
       top: -610px;
       @media screen and (max-width: 1750px) {
         background-size: 100%;
@@ -141,7 +141,7 @@
         top: -540px;
       }
       @media screen and (max-width: 672px) {
-        background-image: url("../assets/главнаям.png");
+        background-image: url("../assets/главнаям.webp");
         background-size: 50%;
         left: -700px;
         top: -1200px;

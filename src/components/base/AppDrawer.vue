@@ -1,7 +1,7 @@
 <template>
   <v-navigation-drawer v-model="drawer" absolute temporary right class="nav">
     <div class="nav__header d-flex justify-space-between align-center">
-      <a @click="drawer = false"
+      <a @click="drawer = false" href="#!"
         ><v-icon large color="black">mdi-close</v-icon></a
       >
       <div class="logo">

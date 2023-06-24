@@ -7,7 +7,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  metaInfo: {
+    title: "Ошибка 404",
+  },
+};
 </script>
 
 <style></style>

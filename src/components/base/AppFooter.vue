@@ -11,17 +11,23 @@
             <ul class="footer__links">
               <li>
                 <a href="mailto:socialproject2022@mail.ru" target="_blank"
-                  ><img src="../../assets/35.svg"
+                  ><img src="../../assets/35.svg" alt="Почта" title="Почта"
                 /></a>
               </li>
               <li>
                 <a href="https://t.me/+qtJ6uVyUlqAxNzky" target="_blank"
-                  ><img src="../../assets/37.svg"
+                  ><img
+                    src="../../assets/37.svg"
+                    alt="Telegram"
+                    title="Telegram"
                 /></a>
               </li>
               <li>
                 <a href="https://vk.com/public220092563" target="_blank"
-                  ><img src="../../assets/36.svg"
+                  ><img
+                    src="../../assets/36.svg"
+                    alt="ВКонтакте"
+                    title="ВКонтакте"
                 /></a>
               </li>
             </ul>

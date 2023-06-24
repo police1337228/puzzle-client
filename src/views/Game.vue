@@ -245,6 +245,9 @@ import "@/scss/game.scss";
 import Video from "../components/video/Video.vue";
 export default {
   components: { Video },
+  metaInfo: {
+    title: "Игра",
+  },
   data() {
     return {
       isStarted: false,

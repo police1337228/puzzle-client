@@ -52,7 +52,7 @@
           <v-col class="col-xl-4 col-md-4 col-sm-12">
             <div class="pluses__item">
               <div class="pluses__logo pluses__logo--blue">
-                <img src="../assets/16.png" alt="" />
+                <img src="../assets/16.webp" alt="Словарь" title="Словарь" />
               </div>
               <div class="pluses__body">
                 <div class="pluses__title"><h3>Словарь</h3></div>
@@ -68,7 +68,11 @@
           <v-col class="col-xl-4 col-md-4 col-sm-12">
             <div class="pluses__item">
               <div class="pluses__logo pluses__logo--green">
-                <img src="../assets/15.png" alt="" />
+                <img
+                  src="../assets/15.webp"
+                  alt="Алфавит и цифры"
+                  title="Алфавит и цифры"
+                />
               </div>
               <div class="pluses__body">
                 <div class="pluses__title"><h3>Алфавит и цифры</h3></div>
@@ -86,7 +90,11 @@
           <v-col class="col-xl-4 col-md-4 col-sm-12">
             <div class="pluses__item">
               <div class="pluses__logo pluses__logo--purple">
-                <img src="../assets/12.png" alt="" />
+                <img
+                  src="../assets/12.webp"
+                  alt="Видео-лекции"
+                  title="Видео-лекции"
+                />
               </div>
               <div class="pluses__body">
                 <div class="pluses__title"><h3>Видео-лекции</h3></div>
@@ -105,7 +113,7 @@
           <v-col class="col-xl-4 col-md-4 col-sm-12">
             <div class="pluses__item">
               <div class="pluses__logo pluses__logo--yellow">
-                <img src="../assets/13.png" alt="" />
+                <img src="../assets/13.webp" alt="Игры" title="Игры" />
               </div>
               <div class="pluses__body">
                 <div class="pluses__title"><h3>Игры</h3></div>
@@ -121,7 +129,11 @@
           <v-col class="col-xl-4 col-md-4 col-sm-12">
             <div class="pluses__item">
               <div class="pluses__logo pluses__logo--violet">
-                <img src="../assets/14.png" alt="" />
+                <img
+                  src="../assets/14.webp"
+                  alt="Подборка по тематикам"
+                  title="Подборка по тематикам"
+                />
               </div>
               <div class="pluses__body">
                 <div class="pluses__title">
@@ -168,7 +180,7 @@
           progress-color="#CA88F3"
         >
           <template v-slot:prev="{ on, attrs }">
-            <a v-bind="attrs" v-on="on"
+            <a href="#!" v-bind="attrs" v-on="on"
               ><img
                 src="../assets/arrow.svg"
                 alt=""
@@ -178,7 +190,7 @@
             /></a>
           </template>
           <template v-slot:next="{ on, attrs }">
-            <a v-bind="attrs" v-on="on"
+            <a href="#!" v-bind="attrs" v-on="on"
               ><img
                 src="../assets/arrow.svg"
                 alt=""
@@ -193,7 +205,11 @@
                 <v-col class="col-xl-2 col-md-2 col-sm-6 col-12"
                   ><div class="abilities__item">
                     <div class="abilities__photo">
-                      <img :src="item.img" alt="" />
+                      <img
+                        :src="item.img"
+                        :alt="item.title"
+                        :title="item.title"
+                      />
                     </div>
                     <div class="abilities__title">
                       <p>{{ item.title }}</p>
@@ -208,7 +224,11 @@
           <v-col class="col-xl-2 col-md-2 col-sm-6 col-12"
             ><div class="abilities__item">
               <div class="abilities__photo">
-                <img src="../assets/17.png" alt="" />
+                <img
+                  src="../assets/17.webp"
+                  alt="Разнообразность"
+                  title="Разнообразность"
+                />
               </div>
               <div class="abilities__title"><p>Разнообразность</p></div>
             </div></v-col
@@ -216,7 +236,11 @@
           <v-col class="col-xl-2 col-md-2 col-sm-6 col-12"
             ><div class="abilities__item">
               <div class="abilities__photo">
-                <img src="../assets/21.png" alt="" />
+                <img
+                  src="../assets/21.webp"
+                  alt="Результативность"
+                  title="Результативность"
+                />
               </div>
               <div class="abilities__title"><p>Результативность</p></div>
             </div></v-col
@@ -224,7 +248,11 @@
           <v-col class="col-xl-2 col-md-2 col-sm-6 col-12"
             ><div class="abilities__item">
               <div class="abilities__photo">
-                <img src="../assets/18.png" alt="" />
+                <img
+                  src="../assets/18.webp"
+                  alt="Доступность"
+                  title="Доступность"
+                />
               </div>
               <div class="abilities__title"><p>Доступность</p></div>
             </div></v-col
@@ -232,7 +260,11 @@
           <v-col class="col-xl-2 col-md-2 col-sm-6 col-12"
             ><div class="abilities__item">
               <div class="abilities__photo">
-                <img src="../assets/20.png" alt="" />
+                <img
+                  src="../assets/20.webp"
+                  alt="Мобильность"
+                  title="Мобильность"
+                />
               </div>
               <div class="abilities__title"><p>Мобильность</p></div>
             </div></v-col
@@ -240,7 +272,11 @@
           <v-col class="col-xl-2 col-md-2 col-sm-6 col-12"
             ><div class="abilities__item">
               <div class="abilities__photo">
-                <img src="../assets/19.png" alt="" />
+                <img
+                  src="../assets/19.webp"
+                  alt="Универсальность"
+                  title="Универсальность"
+                />
               </div>
               <div class="abilities__title"><p>Универсальность</p></div>
             </div></v-col
@@ -423,12 +459,12 @@ export default {
         {
           id: 0,
           title: "Разнообразность",
-          img: require("../assets/17.png"),
+          img: require("../assets/17.webp"),
         },
-        { id: 1, title: "Результативность", img: require("../assets/21.png") },
-        { id: 2, title: "Доступность", img: require("../assets/18.png") },
-        { id: 3, title: "Мобильность", img: require("../assets/20.png") },
-        { id: 4, title: "Универсальность", img: require("../assets/19.png") },
+        { id: 1, title: "Результативность", img: require("../assets/21.webp") },
+        { id: 2, title: "Доступность", img: require("../assets/18.webp") },
+        { id: 3, title: "Мобильность", img: require("../assets/20.webp") },
+        { id: 4, title: "Универсальность", img: require("../assets/19.webp") },
       ],
       email: "",
       name: "",
@@ -439,10 +475,11 @@ export default {
         email: [(v) => !!v || "Введите Email"],
         text: [(v) => !!v || "Введите вопрос/предложение"],
       },
-      metaInfo: {
-        title: "ПАЗЛ - изучение русского жествого языка онлайн",
-      },
     };
+  },
+  metaInfo: {
+    title: "ПАЗЛ - изучение русского жествого языка онлайн",
+    titleTemplate: null,
   },
   mounted() {
     if (this.$route.query.message) this.snackbar = true;

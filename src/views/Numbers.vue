@@ -74,8 +74,10 @@
 <script>
 import "@/scss/alphabet.scss";
 export default {
-  name: "Alphabet",
-
+  name: "Numbers",
+  metaInfo: {
+    title: "Цифры",
+  },
   data() {
     return {
       loading: true,

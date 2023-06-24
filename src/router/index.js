@@ -5,7 +5,9 @@ import VueMeta from "vue-meta";
 // import store from "../store/index";
 
 Vue.use(VueRouter);
-Vue.use(VueMeta);
+Vue.use(VueMeta, {
+  refreshOnceOnNavigation: true,
+});
 
 function ifAuthenticated(to, from, next) {
   next();

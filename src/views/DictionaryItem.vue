@@ -94,7 +94,9 @@ import "@/scss/alphabet.scss";
 import Video from "../components/video/Video.vue";
 export default {
   name: "Alphabet",
-
+  metaInfo: {
+    title: "Словарь",
+  },
   data() {
     return {
       dialog: false,

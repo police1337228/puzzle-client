@@ -49,7 +49,9 @@
 import "@/scss/dictionary.scss";
 export default {
   name: "Dictionary",
-
+  metaInfo: {
+    title: "Словари",
+  },
   data() {
     return {
       dictionaryItems: [

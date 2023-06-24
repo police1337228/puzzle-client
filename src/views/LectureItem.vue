@@ -104,6 +104,9 @@ import "@/scss/lecture.scss";
 import Video from "../components/video/Video.vue";
 export default {
   components: { Video },
+  metaInfo: {
+    title: "Лекция",
+  },
   data() {
     return {
       dictionaryItems: [
