@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Main from "../views/Main.vue";
 import VueMeta from "vue-meta";
-// import store from "../store/index";
+import store from "../store/index";
 
 Vue.use(VueRouter);
 Vue.use(VueMeta, {
@@ -10,7 +10,6 @@ Vue.use(VueMeta, {
 });
 
 function ifAuthenticated(to, from, next) {
-  next();
   if (
     store.state.auth.isUserLoggedIn === true &&
     store.state.auth.token !== null &&
