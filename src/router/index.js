@@ -11,26 +11,26 @@ Vue.use(VueMeta, {
 
 function ifAuthenticated(to, from, next) {
   next();
-  // if (
-  //   store.state.auth.isUserLoggedIn === true &&
-  //   store.state.auth.token !== null &&
-  //   store.state.auth.user !== null
-  // ) {
-  //   next();
-  // } else {
-  //   if (from.name === "Main") {
-  //     router.currentRoute.query["message"] = null;
-  //     router.push({
-  //       path: router.currentRoute.fullPath,
-  //       query: { message: "login" },
-  //     });
-  //   } else {
-  //     router.push({
-  //       name: "Main",
-  //       query: { message: "login" },
-  //     });
-  //   }
-  // }
+  if (
+    store.state.auth.isUserLoggedIn === true &&
+    store.state.auth.token !== null &&
+    store.state.auth.user !== null
+  ) {
+    next();
+  } else {
+    if (from.name === "Main") {
+      router.currentRoute.query["message"] = null;
+      router.push({
+        path: router.currentRoute.fullPath,
+        query: { message: "login" },
+      });
+    } else {
+      router.push({
+        name: "Main",
+        query: { message: "login" },
+      });
+    }
+  }
 }
 
 const routes = [
