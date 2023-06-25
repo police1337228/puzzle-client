@@ -180,7 +180,7 @@
           progress-color="#CA88F3"
         >
           <template v-slot:prev="{ on, attrs }">
-            <a href="#!" v-bind="attrs" v-on="on"
+            <a v-bind="attrs" v-on="on"
               ><img
                 src="../assets/arrow.svg"
                 alt=""
@@ -190,8 +190,8 @@
             /></a>
           </template>
           <template v-slot:next="{ on, attrs }">
-            <a href="#!" v-bind="attrs" v-on="on"
-              ><img
+            <a v-bind="attrs" v-on.prevent="on">
+              <img
                 src="../assets/arrow.svg"
                 alt=""
                 style="transform: rotate(90deg)"
