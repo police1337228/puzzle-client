@@ -478,7 +478,7 @@ export default {
     };
   },
   metaInfo: {
-    title: "ПАЗЛ - изучение русского жествого языка онлайн",
+    title: "ПАЗЛ - изучение русского жестового языка онлайн",
     titleTemplate: null,
   },
   mounted() {
