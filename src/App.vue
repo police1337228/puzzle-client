@@ -783,6 +783,9 @@ header {
     background-size: auto;
     background-position: right;
 
+    @media screen and (max-width: 1801px) {
+      top: -1100px;
+    }
     @media screen and (max-width: 1750px) {
       right: -10%;
     }
@@ -1087,8 +1090,10 @@ header {
     }
     @media screen and (max-width: 1280px) {
       right: -30%;
-      top: 1370px;
+      top: 1330px;
     }
+    // @media screen and (max-width: 1276px) {
+    // }
     @media screen and (max-width: 1200px) {
       right: -35%;
       top: 1370px;

@@ -56,7 +56,7 @@
 
       <v-row class="alphabet__list justify-center">
         <v-col
-          class="col-xl-3 col-md-4 col-sm-6 col-6"
+          class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6"
           v-for="item in alphabetItems[Number($route.params.id)].videos"
           :key="item.id"
           v-show="item.id + 1 <= itemsToShow"
@@ -70,14 +70,17 @@
             </div>
           </div>
         </v-col>
-        <v-btn
-          @click="itemsToShow += 8"
-          v-if="
-            itemsToShow < alphabetItems[Number($route.params.id)].videos.length
-          "
-          text
-          >Смотреть ещё</v-btn
-        >
+        <v-col class="col-12 d-flex justify-center align-center pt-0">
+          <v-btn
+            @click="itemsToShow += 8"
+            v-if="
+              itemsToShow <
+              alphabetItems[Number($route.params.id)].videos.length
+            "
+            text
+            >Смотреть ещё</v-btn
+          >
+        </v-col>
       </v-row>
     </div>
   </v-container>
