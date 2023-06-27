@@ -403,7 +403,7 @@
                     <v-textarea
                       class="textfield"
                       no-resize
-                      rows="3"
+                      rows="1"
                       v-model="text"
                       name="text"
                       :rules="rules.text"
