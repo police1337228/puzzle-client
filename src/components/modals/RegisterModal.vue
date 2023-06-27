@@ -158,7 +158,7 @@
 
 <script>
 import AuthenticationService from "@/services/AuthenticationService";
-
+import MailService from "@/services/MailService";
 export default {
   data() {
     return {
@@ -199,8 +199,15 @@ export default {
           birthDate: this.birthDate,
           mailAgree: this.mailAgree ? "1" : "0",
         });
+
         this.$store.dispatch("auth/setToken", response.data.token);
         this.$store.dispatch("auth/setUser", response.data.user);
+        await MailService.mailRegister({
+          email: response.data.user.email,
+          name: response.data.user.fullName,
+          birthDate: response.data.user.birthDate,
+          mailAgree: response.data.user.mailAgree,
+        });
         this.registerDialog = false;
       } catch (error) {
         this.error = error.response.data.error;
